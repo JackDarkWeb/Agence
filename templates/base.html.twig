@@ -19,10 +19,11 @@
                 <li class="nav-item">
                     <a class="nav-link {% if current_menu is defined and  current_menu == 'properties' %} active text-warning{% endif  %}" href="{{ path("property.index") }}">Buy <span class="sr-only">(current)</span></a>
                 </li>
+                {% if admin_menu is defined and admin_menu == 'true' %}
                 <li class="nav-item">
-                    <a class="nav-link" href="">Create the article</a>
+                    <a class="nav-link" href="{{ path('admin.property.create') }}">Create the new property</a>
                 </li>
-
+                {% endif %}
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
