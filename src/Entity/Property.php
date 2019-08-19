@@ -9,7 +9,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PropertyRepository")
- * * @UniqueEntity("title")
+ * @UniqueEntity("title")
  */
 class Property
 {
